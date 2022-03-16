@@ -7,7 +7,7 @@ body{
 /* NAVBAR CSS */
 
 /* Carbon Fiber Design */
-.navbar, .dropdown-menu{
+.navbar, .dropdown-menu, #footer{
     background-color: rgb(32, 32, 32);
     background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,1)), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
     background-size: 100% 100%, 10px 10px, 10px 10px, 10px 5px;
@@ -17,6 +17,12 @@ body{
 /* Color of navbar links and all appropriate site text */
 .nav-link, .dropdown-item, .text-content{
   color: #FAF9F6 !important;
+}
+
+/* Setting margins and lineheight of all appropriate text content */
+p.text-content, h3.text-content, h5.text-content{
+  margin: 2% 15%;
+  line-height: .75cm;
 }
 
 /* Hover color of navbar links */
