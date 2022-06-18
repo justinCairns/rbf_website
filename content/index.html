@@ -10,8 +10,23 @@
 
     <link rel="stylesheet" href="../css/site.css">
     <link rel="stylesheet" href="../css/index.css">
+    <script defer src="../js/index.js"></script>
 </head>
 <body>
+  <!-- Text Carosuel -->
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="background-color: #5b7e96">
+    <div class="carousel-inner text-white text-center">
+      <div class="carousel-item active">
+        <h3>Welcome to Rockingham Bicycle & Fabrication!</h3>
+      </div>
+      <div class="carousel-item">
+        <h3>This week only: 25% off all hats</h3>
+      </div>
+      <div class="carousel-item">
+        <h3>Have you seen our customization section?</h3>
+      </div>
+    </div>
+  </div>
     <!-- Navbar -->
     <nav id="navigation" class="navbar sticky-top navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="index.html">
@@ -20,47 +35,61 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item ">
-                <a class="nav-link" href="index.html">Home</a>
+          <div class="collapse navbar-collapse" id="navbarNav" style="font-size: 125%">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item padded">
+                <a class="nav-link active" href="index.html" >HOME</a>
               </li>
+              <li class="nav-item dropdown padded">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="bikes.html">
+                  BIKES
+                </a>
+                <div class="dropdown-menu nav-dropdown" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="m1.html">M1</a>
+                  <a class="dropdown-item" href="m2.html">M2</a>
+                  <a class="dropdown-item" href="g1.html">G1</a>
+                </div>
+              </li>
+              <li class="nav-item padded">
+                <a class="nav-link" href="parts.html">PARTS</a>
+              </li>
+              <li class="nav-item padded">
+                <a class="nav-link" href="gear.html">GEAR</a>
+              </li>
+              <li class="nav-item padded" >
+                <a class="nav-link" href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms auto pe-5">
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="#"><img src="../images/search.png" width="25" height="25" class="d-inline-block align-top" alt=""></a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Bikes
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="m1.html">M1</a>
-                  <a class="dropdown-item" href="#">M2</a>
-                  <a class="dropdown-item" href="#">G1</a>
-                  <a class="dropdown-item" href="#">Build Your Own</a>
+                <!-- Shopping Cart icon by Icons8 https://icons8.com/icons/set/shopping-cart--white -->
+                <a id="shoppingDropdownMenuLink" class="nav-link dropdown-toggle" href="cart.html"><img src="../images/cart_icon.png" width="25" height="25" class="d-inline-block align-top" alt=""></a>
+                <div class="dropdown-menu nav-dropdown" aria-labelledby="shoppingDropdownMenuLink">
+                  <p class="text-white"><b>Total: $</b>4,895.90</p>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="cart.html">View Cart</a>     
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Parts</a>
+                <a class="nav-link" href="#"><img src="../images/user.png" width="18" height="25" class="d-inline-block align-top" alt=""></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Gear</a>
-              </li>
-              <li class="nav-item">
-                <!-- Shopping Cart icon by Icons8 https://icons8.com/icons/set/shopping-cart--white -->
-                <a class="nav-link" href="#"><img src="../images/cart_icon.png" width="25" height="25" class="d-inline-block align-top" alt="">Cart</a>
+                <a class="nav-link" href="#"><img src="../images/flag.png" width="30" height="25" class="d-inline-block align-top" alt=""></a>
               </li>
             </ul>
           </div>
     </nav>
-
     <!-- Image carousel(need images to be same sizes) --> 
     <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active" data-interval="7000">
-          <img src="../images/M1_action2.png" class="img-fluid d-block w-100" alt="...">
+          <img src="../images/M1_action2a.png" class="img-fluid d-block w-100" alt="...">
         </div>
         <div class="carousel-item" data-interval="7000">
-          <img src="../images/M2_action.png" class="img-fluid d-block w-100" alt="...">
+          <img src="../images/M2_actiona.png" class="img-fluid d-block w-100" alt="...">
         </div>
         <div class="carousel-item" data-interval="7000">
           <img src="../images/G1_action.png" class="img-fluid d-block w-100" alt="...">
@@ -76,18 +105,36 @@
       </a>
     </div> 
 
-    <!-- Our mission summary -->
-    <h1 class="text-center text-content"><b>Our Mission</b></h1>
-    <div class="d-flex justify-content-center">
-      <p id="mission-statement" class="text-content">
-      Rockingham Bicycle & Fabrication was founded in a backyard workshop in 2002 in Stokesville, Virginia, near the North River.
-      At RB&F, we design and build high-end carbon fiber mountain and gravel bikes in small quantities compared to the big bicycle corporations.
-      Every RB&F bike is built with meticulous detail, using high-end components and the best materials.
-      Our design and fabrication personnel team have over 85 combined years in the aerospace, motorsport racing, and bicycle industries.
-      RB&F bikes have won one Enduro World Series, two US Big Mountain Enduro Championships and two Red Bull Rampages. 
-      Our racing résumé also includes a solid list of top-ten podium finishes across both the United States and Canada.
-      </p>
-    </div> 
+    <br>
+    
+    <div class="container rounded" style="background-color: black">
+      <br>
+    <h1 class="text-center text-content">Our Story</h1>
+    <p class="text-content">Rockingham Bicycle & Fabrication was founded in a backyard workshop in 2002 in Stokesville, Virginia, near the North River. 
+    We are a small business, employing less than 50 people and are privately held, though employees may opt in and invest, making it an 
+    employee-owned company.At RB&F, we design and build high-end carbon fiber mountain and gravel bikes in small quantities compared to the big 
+    bicycle corporations. Our current corporate headquarters is based in Harrisonburg, Virginia and we have just opened a new manufacturing 
+    facility in Rockingham County, just north of the city, increasing our production output. Though RB&F is considered a "boutique" bike builder,
+    our intention is to expand our product line within the next year. We have established a small, but dedicated dealer network in the 
+    Mid-Atlantic and Northeast region states as well as California, Colorado, Washington, and Canada.
+    </p>
+
+    <h1 class="text-center text-content">Our Products</h1>
+    <p class="text-content">Our standard models are carbon fiber mountain and gravel bicycles, built to order through a dealer or online retailer
+    and then shipped to the retailer or directly to consumers. We currently have a small model range, but are developing two new bicycles to 
+    complement our current lineup. Every bike RB&F manufactures is built with meticulous detail, using high-endcomponents and the best materials.
+    Our testing grounds are the chunky, technical trails around the North Mountain area as well as Massanutten, Snowshoe, and Bryce bike parks to
+    ensure our bikes meet our expectations. 
+    <br>
+    What sets us apart from other small bike manufacturers is that we are a true custom shop. Customers can select their frame size/configuration
+    and RB&F will build a bicycle according to the supplied personal measurements, riding style and specifications. At RB&F, we personally build
+    each bike, from hand-layering the carbon fiber frame, to building custom wheel sets, in combination with using only the best component groups
+    selected by the customer.
+    </p>
+    <br>
+    </div>
+      <br>
+    
 
     <!-- Footer -->
     <footer id="footer" class="text-center text-content">
@@ -133,7 +180,7 @@
             <div class="col-lg-3 col-md-6">
               <h5 class="text-uppercase">Hours</h5>
               <p>
-                <b>Monday-Friday: </b>11AM-7PM<br>
+                <b>Mon-Fri: </b>11AM-7PM<br>
                 <b>Saturday: </b>10AM-4PM<br>
                 <b>Sunday: </b> Closed
               </p>
@@ -145,6 +192,8 @@
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.5)">
         © 2022 Copyright:<a class="text-white" href="index.html"> rockinghambike.com</a>
+        <br>
+        <a class="text-muted" href="privacy.html">Privacy policy</a>
       </div>    
     </footer>
 

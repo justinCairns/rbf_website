@@ -1,13 +1,15 @@
 /* Background color of webpage */
 body{
-  background-color: #202020;
+  background-image: url("../images/asphalt-bg.jpg");
+  background-color: #191919;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 
 /* NAVBAR CSS */
 
 /* Carbon Fiber Design */
-.navbar, .dropdown-menu, #footer{
+.navbar, .dropdown-menu, .bike-header, #footer{
     background-color: rgb(32, 32, 32);
     background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,1)), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
     background-size: 100% 100%, 10px 10px, 10px 10px, 10px 5px;
@@ -20,8 +22,15 @@ body{
 }
 
 /* Setting margins and lineheight of all appropriate text content */
-p.text-content, h3.text-content, h5.text-content{
+p.text-content, h3.text-content, h5.text-content, h4.text-content{
   margin: 2% 15%;
+  line-height: .75cm;
+}
+
+
+/* text-content on bike pages #FAF9F6 */
+.bike-text{
+  color: whitesmoke;
   line-height: .75cm;
 }
 
@@ -31,12 +40,11 @@ p.text-content, h3.text-content, h5.text-content{
   background-color: transparent !important;
 }
 
-/* Green navbar seperation lines */
-@media only screen and (min-width: 992px) {
-  .navbar .navbar-nav .nav-item .nav-link {
-    padding: 0 0.5em;
-  }
-  .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
-    border-right: 2px solid #71984a;
-  }
+.dropdown:hover .nav-dropdown{
+  display: inline-block; 
+  margin-top: 10;
+}
+
+.padded{
+  padding-right: 10%;
 }

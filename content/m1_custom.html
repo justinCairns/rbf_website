@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/site.css">
+    <script defer src="../js/m1_custom_shop.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="navigation" class="navbar sticky-top navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">
+      <img src="../images/RBF_Primary-removed.png" width="180" height="70" class="d-inline-block align-top" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" style="font-size: 125%">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item padded">
+          <a class="nav-link" href="index.html" >HOME</a>
+        </li>
+        <li class="nav-item dropdown padded">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="bikes.html">
+            BIKES
+          </a>
+          <div class="dropdown-menu nav-dropdown" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="m1.html">M1</a>
+            <a class="dropdown-item" href="m2.html">M2</a>
+            <a class="dropdown-item" href="g1.html">G1</a>
+          </div>
+        </li>
+        <li class="nav-item padded">
+          <a class="nav-link active" href="parts.html">PARTS</a>
+        </li>
+        <li class="nav-item padded">
+          <a class="nav-link" href="gear.html">GEAR</a>
+        </li>
+        <li class="nav-item padded" >
+          <a class="nav-link" href="contact.html">CONTACT</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms auto pe-5">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="../images/search.png" width="25" height="25" class="d-inline-block align-top" alt=""></a>
+        </li>
+        <li class="nav-item dropdown">
+          <!-- Shopping Cart icon by Icons8 https://icons8.com/icons/set/shopping-cart--white -->
+          <a id="shoppingDropdownMenuLink" class="nav-link dropdown-toggle" href="cart.html"><img src="../images/cart_icon.png" width="25" height="25" class="d-inline-block align-top" alt=""></a>
+          <div class="dropdown-menu nav-dropdown" aria-labelledby="shoppingDropdownMenuLink">
+            <p class="text-white"><b>Total: $</b>4,895.90</p>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="cart.html">View Cart</a>     
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="../images/user.png" width="18" height="25" class="d-inline-block align-top" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="../images/flag.png" width="25" height="25" class="d-inline-block align-top" alt=""></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<div class="container-fluid">
+  <div  class="row bike-header">
+    <h1 class="text-content text-center"><b>Time to Make it Your Own</b></h1>
+  </div>
+  <div class="row" style="background-color: #e8e8e8">
+    <img id="img-area" src="../images/m1_banner.png" class="col-8  img-fluid" height=650 alt="..." style="padding-left: 0">
+    <div class="col">
+      <div class="text-center mx-auto dropdown " style="background-color: #e8e8e8;">
+        <button id="handlebarDropdownMenuLink" class="btn-lg dropdown-toggle" style="background-color: #e8e8e8;  border: none;" >Handlebars</button>
+       <ul class="dropdown-menu nav-dropdown" aria-labelledby="handlebarDropdownMenuLink">
+          <p class="dropdown-item">Speedway 35</p>
+          <p class="dropdown-item">Renthal Fatbar</p>
+          <p class="dropdown-item">Funn Full-on</p>
+       </ul>
+      </div>
+      <div class="text-center mx-auto dropdown" style="background-color: #d8d4d4;">
+        <button id="forkDropdownMenuLink" class="btn-lg dropdown-toggle" style="background-color: #d8d4d4;  border: none;" >Forks</button>
+        <ul class="dropdown-menu nav-dropdown" aria-labelledby="forkDropdownMenuLink">
+          <p class="dropdown-item">Fox float 32</p>
+          <p class="dropdown-item">RockShox SID Ultimate</p>
+          <p class="dropdown-item">Marzocchi Bomber Z1</p>
+        </ul>
+      </div>
+      <div class="text-center mx-auto dropdown" style="background-color: #b7b7b7;">
+        <button id="brakeDropdownMenuLink" class="btn-lg dropdown-toggle" style="background-color: #b7b7b7;  border: none;" >Brakes</button>
+        <ul class="dropdown-menu nav-dropdown" aria-labelledby="brakeDropdownMenuLink">
+          <p class="dropdown-item">Shimano Deore M6100</p>
+          <p class="dropdown-item">TRP Quadiem</p>
+          <p class="dropdown-item">Clarks M2</p>
+        </ul>
+      </div>
+      <div class="text-center mx-auto dropdown" style="background-color: #9a9a9a;">
+        <button id="chainDropdownMenuLink" class="btn-lg dropdown-toggle" style="background-color: #9a9a9a;  border: none;">Chain</button>
+        <ul class="dropdown-menu nav-dropdown" aria-labelledby="chainDropdownMenuLink">
+          <p class="dropdown-item">SRAM X01 Eagle</p>
+          <p class="dropdown-item">YBN SLA Gold</p>
+          <p class="dropdown-item">KMC X11 SL</p>
+        </ul>
+      </div>
+      <div class="text-center mx-auto dropdown" style="background-color: #838383;">
+        <button id="wheelDropdownMenuLink" class="btn-lg dropdown-toggle" style="background-color: #838383; border: none;" >Wheels</button>
+        <ul class="dropdown-menu nav-dropdown" aria-labelledby="wheelDropdownMenuLink">
+          <p class="dropdown-item">Maxxis Minion DHF</p>
+          <p class="dropdown-item">Schwalbe Magic Mary</p>
+          <p class="dropdown-item">Vittoria Mazza Trail</p>
+        </ul>
+      </div>
+      <div class="text-center mx-auto dropdown" style="background-color: #696969;">
+        <button id="seatDropdownMenuLink" class="btn-lg dropdown-toggle" style="background-color: #696969;  border: none;" >Seat</button>
+        <ul class="dropdown-menu nav-dropdown" aria-labelledby="seatDropdownMenuLink">
+          <p class="dropdown-item">WTB Koda</p>
+          <p class="dropdown-item">Spank Spike 160</p>
+          <p class="dropdown-item">Ergon SM Pro</p>
+        </ul>
+      </div>
+      <div class="text-center mx-auto dropdown" style="background-color: #535353;">
+        <button id="pedalDropdownMenuLink" class="btn-lg dropdown-toggle" style="background-color: #535353; border: none;" >Seat Post</button>
+        <ul class="dropdown-menu nav-dropdown" aria-labelledby="pedalDropdownMenuLink">
+          <p class="dropdown-item">Thomson Elite</p>
+          <p class="dropdown-item">Ritchey Comp Zero</p>
+          <p class="dropdown-item">Easton EA70</p>
+        </ul>
+      </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h4><b>Price: $</b>1234</h4>
+        <br>
+        <button class="btn-lg btn-dark rounded" style="background-color: #363636;" >Add to Cart</button>
+  </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="text-center text-content">
+        <div class="container p-4">
+          <section>
+            <div class="row">
+  
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Social Media</h5>
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#!" class="text-white">Facebook</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white">Instagram</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-white">Twitter</a>
+                  </li>
+                </ul>
+              </div>
+  
+              <div class="col-lg-3 col-md-6">
+                <h5 class="text-uppercase">Contact Us</h5>
+                <p>
+                  888.434.2679<br>
+                  540.434.9871<br>
+                  <a href="mailto:info@rockinghambike.com">info@rockinghambike.com</a>
+                </p>
+              </div> 
+  
+              <div class="col-lg-3 col-md-6 ">
+                <h5 class="text-uppercase">Location</h5>
+                <div class=" mb-0">
+                  <address>
+                    <b>Rockingham Bicycle & Fabrication</b>
+                    11034 John Wayland Highway<br>
+                    Harrisonburg, VA 22802 USA
+                  </address>
+                </div> 
+              </div>
+  
+              <div class="col-lg-3 col-md-6">
+                <h5 class="text-uppercase">Hours</h5>
+                <p>
+                  <b>Mon-Fri: </b>11AM-7PM<br>
+                  <b>Saturday: </b>10AM-4PM<br>
+                  <b>Sunday: </b>Closed
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+  
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.5)">
+          © 2022 Copyright:<a class="text-white" href="index.html"> rockinghambike.com</a>
+          <br>
+          <a class="text-muted" href="privacy.html">Privacy policy</a>
+        </div>    
+      </footer>
+</div>
+    <!-- Bootstrap JS script calls -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
